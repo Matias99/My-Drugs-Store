@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+  background-color: #030303;
+  display: flex;
+}
+header--align {
+  text-align: center;
+}
+
+.barramenu {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+}
+
+.logo {
+  text-align: left;
+  height: 80%;
+  width: 15%;
+  padding-top: 1%;
+  margin-left: 3%;
+}
+
+.letramenu {
+  text-decoration: none;
+  font-size: 25px;
+  color: #b6b3b3;
+  word-spacing: 25px;
+  margin-left: 300px;
+  font-family: "Open Sans Condesed", sans-serif;
+  padding-top: 5%;
+}
+
+body {
+  background-color: #030303;
+}
+
+.imagenes {
+  border-radius: 35px;
+  margin-top: 3%;
+  margin-left: 7%;
+  margin-bottom: 4%;
+}
+
+body header div :hover {
+  transform: scale(1.2);
+}
+
+.color :hover {
+  color: white;
+}
+
+.animacion :hover {
+  transform: scale(1.2);
+}
+
+.cont {
+  display: grid;
+  gap: 10px;
+  height: 100%;
+  width: 40%;
+  background-color: #030303;
+}
+
+.mapa {
+  margin-left: 70%;
+  margin-top: 10%;
+  border-radius: 20px;
+}
+
+.listapedido {
+  height: 600px;
+  width: 80%;
+  background-color: white;
+  margin-left: -40%;
+  margin-top: 8%;
+  border-radius: 20px;
+}
+
+.cajacart {
+  height: 40%;
+  width: 80%;
+  display: grid;
+  grid-template-areas: "mapa listapedido" "mapa listapedido";
+}
+
+.cajamapa {
+  grid-area: mapa;
+}
+
+.cajapedido {
+  grid-area: listapedido;
+}
+
+@media screen and (min-width: 720px) {
+  .barramenu {
+    font-size: 4px;
+  }
+
+  .logo {
+    width: 20%;
+    height: 80%;
+  }
+
+  .imagenes {
+    width: 80%;
+    height: 20%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .barramenu {
+    font-size: 20%;
+  }
+
+  .logo {
+    width: 20%;
+    height: 80%;
+  }
+
+  .imagenes {
+    width: 25%;
+    height: 25%;
+  }
+}
+header {
+  height: 200px;
+  width: 100%;
+  background-color: #030303;
+  display: flex;
+}
+header--align {
+  text-align: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */
