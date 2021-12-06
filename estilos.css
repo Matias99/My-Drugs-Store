@@ -5,7 +5,7 @@
 
 header {
   height: 200px;
-  width: 100%;
+  width: 100vh;
   background-color: #030303;
   display: flex;
 }
@@ -15,9 +15,10 @@ header--align {
 
 .barramenu {
   height: 200px;
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
   display: flex;
+  margin-left: 5px;
 }
 
 .logo {
@@ -42,6 +43,10 @@ body {
   background-color: #030303;
 }
 
+.colorfondo{
+  background-color: #030303;
+}
+
 .imagenes {
   border-radius: 35px;
   margin-top: 3%;
@@ -60,18 +65,18 @@ body header div :hover {
 .animacion :hover {
   transform: scale(1.2);
 }
-
+/*
 .cont {
-  display: grid;
+  display: flex;
   gap: 10px;
   height: 100%;
-  width: 40%;
+  width: 80%;
   background-color: #030303;
 }
-
+*/
 .mapa {
-  margin-left: 70%;
-  margin-top: 10%;
+  margin-left: 10%;
+  margin-top: 6%;
   border-radius: 20px;
 }
 
@@ -83,11 +88,11 @@ body header div :hover {
   margin-top: 8%;
   border-radius: 20px;
 }
-
+/*
 .cajacart {
-  height: 40%;
+  height: 80%;
   width: 80%;
-  display: grid;
+  display: flex;
   grid-template-areas: "mapa listapedido" "mapa listapedido";
 }
 
@@ -98,7 +103,7 @@ body header div :hover {
 .cajapedido {
   grid-area: listapedido;
 }
-
+*/
 @media screen and (min-width: 720px) {
   .barramenu {
     font-size: 4px;
@@ -137,6 +142,82 @@ header {
 }
 header--align {
   text-align: center;
+}
+
+.barrafooter{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.barrafooter img{
+  margin: auto;
+}
+
+.contmapa{
+  height: auto;
+  width: auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(13, 14, 13);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ffef11;
+  color: rgb(12, 12, 12);
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffef11;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #313131;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button-submit {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button-submit  {
+  background-color: #ffef11;
+  color: rgb(12, 12, 12);
 }
 
 /*# sourceMappingURL=estilos.css.map */

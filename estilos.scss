@@ -10,6 +10,18 @@ header{
     display: flex;
 }
 
+footer{
+    height: 150px;
+    width: 100%;
+    display: flex;
+}
+
+.barrafooter{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+}
 .barramenu{
     height: 200px;
     width: 100%;
@@ -30,7 +42,7 @@ header{
     text-decoration: none;
     font-size: 25px;
     color: rgb(182, 179, 179);
-    word-spacing: 25px;
+    word-spacing: 1000px;
     margin-left: 300px;
     font-family: 'Open Sans Condesed', sans-serif;
     padding-top: 5%;
@@ -49,6 +61,10 @@ body{
 
 }
 
+.iconos{
+    margin-left: 300px;
+}
+
 body header div :hover{
     transform: scale(1.2);
 }
@@ -62,6 +78,7 @@ body header div :hover{
 }
 .cont{
     display: grid;
+    display: flex;
     gap: 10px;
     height: 100%;
     width: 40%;
@@ -69,7 +86,7 @@ body header div :hover{
 }
 
 .mapa{
-margin-left: 60%;
+margin-left: 5%;
 margin-top: 10%;
 border-radius: 20px;
 }
@@ -153,3 +170,72 @@ $colores: rgb(3, 3, 3);
         width: 80%;
     }
 }
+
+.barrafooter{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    margin: auto;
+  }
+  
+  .barrafooter img{
+    margin: auto;
+  }
+  .contmapa{
+    height: auto;
+    width: auto;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(13, 14, 13);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #ffef11;
+    color: rgb(12, 12, 12);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ffef11;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #313131;
+    padding: 10px;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .button-submit  {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+  }
